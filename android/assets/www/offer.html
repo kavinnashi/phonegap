@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Welcome</title>
+<link href="src/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="src/component.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="src/modernizr.custom.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+    var updateStatusBar = navigator.userAgent.match(/iphone|ipad|ipod/i) &&
+        parseInt(navigator.appVersion.match(/OS (\d)/)[1], 10) >= 7;
+
+    if (updateStatusBar) {
+        document.body.style.marginTop = '20px';
+    }
+
+   if (updateStatusBar) {
+        document.body.style.webkitTransform = 'translate3d(0, 20px, 0)';
+    }
+</script>
+
+<style>
+
+header {
+    background: #d70000 url("src/header-logo-bgX.jpg") repeat-y scroll center top !important;
+}
+
+.wrapper{ padding-bottom:0px !important;}
+   
+</style>
+
+
+</head>
+
+<body>
+<div class="phone">
+<div class="phoneScreen">
+<div class="wrapper">
+<!--Header Start-->
+<header>
+  <div class="notificition">
+<span class="not-arrow"><img src="icons/not-arrow.png" width="25" height="20" alt=""></span>
+<h6>Notifications</h6>
+<ul>
+<li><a href="offer.html">Free Play Cash!<br><span class="nspan">Exp. 1/15/2016</span><span class="r-rrow"><img src="src/r-arrow.png" width="8" height="17" alt=""></span></a></li>
+<li><a href="offer.html">Enter Sweepstakes<br><span class="nspan">Exp. 3/1/2016</span><span class="r-rrow"><img src="src/r-arrow.png" width="8" height="17" alt=""></span></a></li>
+
+</ul>
+</div>
+  <span id="notificition" class="search icons"><img alt="" width="50" height="50" src="icons/notification.png" /></span>
+  <div id="dl-menu" class="dl-menuwrapper"> <span class="menu icons dl-trigger"><img src="src/nav-menu.png" width="50" height="50" alt=""></span>
+    <ul class="dl-menu">
+<li><a id="AccountInfo_hyplnkCtrl" href="offer.html">Offers</a></li>
+<li><a id="Casino_hyplnkCtrl" href="Casino.html">Casino</a></li>
+<li><a id="Dining_hyplnkCtrl" href="Dining.html">Dining</a></li>
+<li><a id="Events_hyplnkCtrl" href="Events.html">Events</a></li>
+<li><a id="Nightlife_hyplnkCtrl" href="Nightlife.html">Nightlife</a></li>
+<li><a id="Nightlife_hyplnkCtrl" href="Hotel.html">Hotel</a></li>
+<li><a id="AboutUs_hyplnkCtrl" href="About-Us.html">About Us</a></li>
+<li><a id="SocialMedia_hyplnkCtrl" href="Social-Media.html">Social Media</a></li>
+<li><a id="Settings_hyplnkCtrl" href="Settings.html">Settings</a></li>
+</ul>
+  </div>
+  <figure class="logo"><a href="index.html"><img src="src/logo_new.png" alt="logo"></a> </figure>
+</header>
+<!--Header End-->
+<div class="clear"></div>
+<!--Navigation Start-->
+<nav>
+   <div class="arrow_back">
+     <span id="barHome_spanUrlControl">
+<a id="barHome_hyplnkCtrl" href="Home-page.html"><img src="src/left-arrow.png" alt="&lt;span>&lt;/span>" border="0" /></a></span>
+
+
+   </div>
+  <P>
+    <span id="accHead_spanTextControl"> Offers
+</span>
+
+  </P>
+</nav>
+
+<section class="banner offer_bg">
+	<div id="userOfferInfo">
+        <h2 id="user_name">Hello, !</h2>
+        <div class="of_per_detail">
+            <p id="player_id">Player ID: 256860</p>
+            <p id="tire">Tier: Gold</p>
+        </div>
+        <div class="of_per_points">
+            <p>Points:</p>
+            <p id="user_points">100</p>
+        </div>
+        <div class="clear"></div>
+     </div>
+    <div class="qrcode_sec"><a href="qr-code.html"><img src="src/qrcodebutton.png" alt=""></a></div>
+</section>
+<div class="clear"></div>
+<!--Service Start-->
+
+<section class="rou_pan ">
+    <div class="a_off offer_btn" id="btnAllOffers">All Offers</div>
+    <div class="m_off offer_btn" id="btnMyOffers">My Offers</div>
+    <div class="clear"></div>
+    
+	<div id="alloffer">
+    
+    <!--
+
+		<div class="off_detail_sec">
+			<figure class="img"><img src="src/all_off_1.jpg" alt=""></figure>
+			<article class="text">
+                <h3>Free Play Cash!</h3>
+                <p>Exp.1/15/2016</p>
+			</article>
+			<a href="#"><article class="savesec"><strong>SAVE</strong></article></a>
+			<div class="clear"></div>
+		</div>
+
+
+		<div class="off_detail_sec">
+       		 <figure class="img"><img src="src/all_off_2.jpg" alt=""></figure>
+       		 <article class="text">
+                <h3>Enter Sweepstakes</h3>
+                <p>Exp. 3/1/2016</p>
+            </article>
+       		 <a href="#"><article class="savesec"><strong>SAVE</strong></article></a>
+       	 	<div class="clear"></div>
+        </div>
+
+        <div class="off_detail_sec">
+             <figure class="img"><img src="src/all_off_3.jpg" alt=""></figure>
+            <article class="text">
+                <h3>$5 off - Banana Cabana!</h3>
+                <p>Exp. 3/1/2016</p>
+            </article>
+            <a href="#"><article class="savesec"><strong>SAVE</strong></article></a>
+            <div class="clear"></div>
+        </div>
+        
+        -->
+	</div>
+
+
+<div id="myoffer">
+<!--
+
+    <div class="off_detail_sec">
+        <figure class="img"><img src="src/all_off_3.jpg" alt=""></figure>
+        <article class="text">
+            <h3>$5 off - Banana Cabana!</h3>
+            <p>Exp. 3/1/2016</p>
+        </article>
+        <a href="#"><article class="redeemed"><strong>redeemed</strong></article></a>
+        <div class="clear"></div>
+    </div>
+-->
+</div>
+
+
+</section>
+<!--Service Start-->
+<div class="clear"></div>
+<!--Service End-->
+    <footer> 
+        <a id="foothome" href="index.html"><img src="src/footer-home-icon.png" alt="" border="0" /></a>
+        <a id="FootCasino" href="Casino.html"><img src="src/footer-dice-icon.png" alt="" border="0" /></a> 
+        <a id="footfood" href="Dining.html"><img src="src/footer-food-icon.png" alt="" border="0" /></a>
+        <a id="footCalender" href="Events.html"><img src="src/footer-calendar-icon.png" alt="" border="0" /></a> 
+        <a id="footerhotel" href="Hotel.html"><img src="src/hotel-icon.png" alt="" border="0" /></a>
+        <a id="footeroffer" ><img src="src/offer-icon-hover.png" alt="" border="0" /></a> 
+    </footer>
+</div>
+</div>
+
+</div>
+
+		<script src="src/jquery.dlmenu.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cordova_plugins.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script>
+		
+			var objUser="";
+			document.addEventListener("deviceready", function() {
+				
+					$( '#dl-menu' ).dlmenu();
+					objUser=JSON.parse(window.localStorage.getItem("XgoldUserDetails"));
+					
+					if(window.localStorage.getItem("XgoldIs_login")!= undefined  && window.localStorage.getItem("XgoldIs_login") != "")
+					{
+						
+						$("#userOfferInfo").show();
+						featchUserProfile(objUser);
+						$("#btnMyOffers").show();
+						$("#btnAllOffers").css({"width":"50%"});
+						featchAllOffers();
+						
+					}
+					else
+					{
+						$("#userOfferInfo").hide();
+						$("#btnMyOffers").hide();
+						$("#btnAllOffers").css({"width":"100%"});
+						featchAllOffers();
+					}
+					
+					$(".offer_btn").click(function(){
+						
+						if($(this).attr("id")=="btnAllOffers")
+						{
+							$("#alloffer").show();
+							$("#myoffer").hide();
+							featchAllOffers();
+						}
+						else if($(this).attr("id")=="btnMyOffers")
+						{
+							$("#myoffer").show();
+							$("#alloffer").hide();
+							featchMyOffers();
+						}
+						
+					});
+					
+					$(".classSaveOffer").on("click",function(){
+						
+						if(window.localStorage.getItem("XgoldIs_login")!= undefined  && window.localStorage.getItem("XgoldIs_login") != "")
+						{
+							addToMyOffer($(this).attr("id"));
+						}
+						else
+						{
+							 showAlert("Message","This option is available only for logged in users","OK");
+						}
+						
+					})
+					
+					
+				
+			});
+			
+			
+			function featchUserProfile(objUser)
+			{
+				var objPostData={
+						"UserAPIKey":window.localStorage.getItem("XgoldUserAPIKey"),
+						"TargetId":objUser.TargetId,
+						"DeviceId":window.localStorage.getItem("push_id"),
+						"OSType":window.localStorage.getItem("os_type")
+					}
+					showLoder()
+					$.ajax({
+					type:"POST",
+					async: false,
+					url: BaseUrl+"getProfile",
+					contentType: "application/json; charset=utf-8",
+					data: JSON.stringify(objPostData),
+					dataType: "json",
+					xhrFields:
+					{
+					'Access-Control-Allow-Credentials': true,
+					 withCredentials: false
+					},
+					headers: {
+		
+					},
+					success: function(obj) 
+					{
+						 hideLoder();
+						 if(obj.Success)
+						 {
+							var objProfileData=obj.profileData
+							$("#user_name").html("Hello, "+objProfileData.FirstName+"!");
+							$("#player_id").html("Player ID: "+objProfileData.PlayerId);
+							$("#tire").html("Tier: "+objProfileData.Tier);
+							$("#user_points").html(objProfileData.Points);
+									
+							
+						 }
+						 else
+						 {
+							 showAlert("Message",obj.msg,"OK");
+						 }
+					
+					},
+					error: function(obj) {
+						 hideLoder();
+						
+					}
+				});
+			}
+			
+			function featchAllOffers()
+			{
+				showLoder()
+				
+				var objPostData={
+						"UserApiKey":window.localStorage.getItem("XgoldUserAPIKey"),
+						"Latitude":window.localStorage.getItem("Latitude"),
+						"Longitude":window.localStorage.getItem("Longitude")
+					}
+					
+					if(window.localStorage.getItem("XgoldIs_login")!= undefined  && window.localStorage.getItem("XgoldIs_login") != "")
+					{
+						objPostData["TargetID"]=objUser.TargetId
+					}
+					
+					$.ajax({
+					type:"POST",
+					async: false,
+					url: BaseUrl+"getOfferDetailList",
+					contentType: "application/json; charset=utf-8",
+					data: JSON.stringify(objPostData),
+					dataType: "json",
+					xhrFields:
+					{
+					'Access-Control-Allow-Credentials': true,
+					 withCredentials: false
+					},
+					headers: {
+		
+					},
+					success: function(obj) 
+					{
+						 hideLoder();
+						 if(obj.Success)
+						 {
+									
+							paintOfferList(obj.OfferList);
+						 }
+						 else
+						 {
+							 showAlert("Message",obj.msg,"OK");
+						 }
+					
+					},
+					error: function(obj) {
+						 hideLoder();
+						
+					}
+				});
+			}
+			
+			function featchMyOffers()
+			{
+				showLoder()
+				
+				var objPostData={
+						"UserApiKey":window.localStorage.getItem("XgoldUserAPIKey"),
+						"Latitude":window.localStorage.getItem("Latitude"),
+						"Longitude":window.localStorage.getItem("Longitude"),
+						"TargetId":objUser.TargetId
+					}
+					
+					
+					
+					$.ajax({
+					type:"POST",
+					async: false,
+					url: BaseUrl+"getMyOfferList",
+					contentType: "application/json; charset=utf-8",
+					data: JSON.stringify(objPostData),
+					dataType: "json",
+					xhrFields:
+					{
+					'Access-Control-Allow-Credentials': true,
+					 withCredentials: false
+					},
+					headers: {
+		
+					},
+					success: function(obj) 
+					{
+						 hideLoder();
+						 if(obj.Success)
+						 {
+									
+							paintMyOfferList(obj.OfferList);
+						 }
+						 else
+						 {
+							 showAlert("Message",obj.msg,"OK");
+						 }
+					
+					},
+					error: function(obj) {
+						 hideLoder();
+						
+					}
+				});
+			}
+			
+			function addToMyOffer(offerId)
+			{
+				
+				showLoder()
+				
+				var objPostData={
+						"UserApiKey":window.localStorage.getItem("XgoldUserAPIKey"),
+						"TargetId":objUser.TargetId,
+						"OfferId":offerId
+					}
+					
+					
+					
+					$.ajax({
+					type:"PUT",
+					async: false,
+					url: BaseUrl+"saveMyOffer",
+					contentType: "application/json; charset=utf-8",
+					data: JSON.stringify(objPostData),
+					dataType: "json",
+					xhrFields:
+					{
+					'Access-Control-Allow-Credentials': true,
+					 withCredentials: false
+					},
+					headers: {
+		
+					},
+					success: function(obj) 
+					{
+						 hideLoder();
+						 if(obj.Success)
+						 {
+							$("#offer-"+offerId).remove();
+						 }
+						 else
+						 {
+							 showAlert("Message",obj.msg,"OK");
+						 }
+					
+					},
+					error: function(obj) {
+						 hideLoder();
+						
+					}
+				});
+				
+			}
+			
+			
+			function paintOfferList(listOffer){
+				var strHtml="";
+				
+				for(var i=0;i<listOffer.length;i++)
+				{
+					strHtml += "<div class='off_detail_sec' id='offer-"+listOffer[i].OfferId+"'>";
+					strHtml += "	<figure class='img'><img src='"+listOffer[i].OfferImage+"' alt=''><\/figure>";
+					strHtml += "	<article class='text'>";
+					strHtml += "		<h3>"+listOffer[i].OfferName+"<\/h3>";
+					strHtml += "		<p>Exp."+listOffer[i].OfferExpDate+" </p>";
+					strHtml += "	<\/article>";
+					strHtml += "	<a  class='classSaveOffer' id='"+listOffer[i].OfferId+"'><article class='savesec'><strong>SAVE<\/strong><\/article><\/a>";
+					strHtml += "	<div class='clear'><\/div>";
+					strHtml += "<\/div>";
+
+				}
+				
+				
+				$("#alloffer").html(strHtml);
+			}
+			
+			function paintMyOfferList(listOffer)
+			{
+				var strHtml="";
+				
+				for(var i=0;i<listOffer.length;i++)
+				{
+					strHtml += "<div class='off_detail_sec'>";
+					strHtml += "	<figure class='img'><img src='"+listOffer[i].OfferImage+"' alt=''><\/figure>";
+					strHtml += "	<article class='text'>";
+					strHtml += "		<h3>"+listOffer[i].OfferName+"<\/h3>";
+					strHtml += "		<p>Exp. "+listOffer[i].OfferExpDate+"<\/p>";
+					strHtml += "	<\/article>";
+					strHtml += "	<a ><article class='redeemed'><strong>redeemed<\/strong><\/article><\/a>";
+					strHtml += "	<div class='clear'><\/div>";
+					strHtml += "<\/div>";
+
+
+				}
+				
+				
+				$("#myoffer").html(strHtml);
+			}
+				
+			
+		</script>
+</form></body>
+</html>

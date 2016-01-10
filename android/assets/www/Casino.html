@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Welcome</title>
+<link href="src/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="src/component.css" />
+
+<style>
+
+header {
+    background: #d70000 url("src/header-logo-bgX.jpg") repeat-y scroll center top !important;
+}
+.phoneScreen{
+	background:#fff;
+}
+.banner-grd-inner1{ display:none !important;}
+.wrapper{ padding-bottom:0px !important;}
+.banner-grd2{ display:none !important;}
+
+#parentBox {
+    position: relative;
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+	transition:all 0.5s ease 0s;
+
+}
+
+.hidden {
+    height: auto;
+    right: -100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	z-index:100;
+	transition:all 0.3s ease 0s;
+}
+#slideboxleft{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:auto;
+	transition:all 0.3s ease 0s;
+}
+</style>
+
+
+
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+<script src="src/modernizr.custom.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+    var updateStatusBar = navigator.userAgent.match(/iphone|ipad|ipod/i) &&
+        parseInt(navigator.appVersion.match(/OS (\d)/)[1], 10) >= 7;
+
+    if (updateStatusBar) {
+        document.body.style.marginTop = '20px';
+    }
+
+   if (updateStatusBar) {
+        document.body.style.webkitTransform = 'translate3d(0, 20px, 0)';
+    }
+</script>
+
+<script> 
+$(document).ready(function(){
+	var parentHeight = $("#slideboxleft").outerHeight();
+	$("#parentBox").css({"min-height" : parentHeight+"px"});
+	 
+	 $("#table").click(function(){
+	 	$("#tablegame").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#tablegame").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+	 $("#roult").click(function(){
+	 	$("#roulette").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#tablegame").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+	 $("#progress").click(function(){
+	 	$("#jackpot").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#tablegame").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+	 $("#recent").click(function(){
+	 	$("#recentwinners").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#tablegame").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+	 $("#feature").click(function(){
+	 	$("#feaplayers").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#tablegame").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+	 
+	 
+	 
+	  $(".target").click(function(){
+		$("#slideboxleft").css("left","0");
+		$(".hidden").css("right","-100%");
+		$("#parentBox").css({"min-height" : parentHeight+"px"});
+	 });
+	
+	 /*$(".target").click(function(){
+		$(".slideright").hide(100);
+        $("#slideboxleft").show(100);
+    });
+    $("#table").click(function(){
+		$("#slideboxleft").css( "margin-right","0");
+        $("#slidebox").css("margin-right","0");
+
+    });
+	$("#roult").click(function(){
+		$("#slideboxleft").css( "margin-right","none");
+        $("#slidebox1").css( "display","block");
+    });
+	$("#progress").click(function(){
+		$("#slideboxleft").css( "display","none");
+        $("#slidebox2").css( "display","block");
+    });
+	$("#recent").click(function(){
+		$("#slideboxleft").css( "display","none");
+        $("#slidebox3").css( "display","block");
+    });
+
+	$("#feature").click(function(){
+		$("#slideboxleft").css( "display","none");
+        $("#slidebox4").css( "display","block");
+    });*/
+});
+</script> 
+
+
+
+
+</head>
+
+<body> 
+   
+<div class="phone">
+<div class="phoneScreen">
+<div class="wrapper">
+<header>
+<div class="search-area"><input type="search" /><span id="search-close" class="close"><img alt="" width="9" height="9" src="src/close.png" /></span></div>
+<span id="search" class="search icons"><img alt="" width="50" height="50" src="icons/notification.png" /></span>
+<div id="dl-menu" class="dl-menuwrapper">
+<span class="menu icons dl-trigger"><img src="src/nav-menu.png" width="50" height="50" alt=""></span>
+<ul class="dl-menu">
+<li><a id="AccountInfo_hyplnkCtrl" href="offer.html">Offers</a></li>
+<li><a id="Casino_hyplnkCtrl" href="Casino1.html">Casino</a></li>
+<li><a id="Dining_hyplnkCtrl" href="Dining.html">Dining</a></li>
+<li><a id="Events_hyplnkCtrl" href="Events.html">Events</a></li>
+<li><a id="Nightlife_hyplnkCtrl" href="Nightlife.html">Nightlife</a></li>
+<li><a id="Nightlife_hyplnkCtrl" href="Hotel.html">Hotel</a></li>
+<li><a id="AboutUs_hyplnkCtrl" href="About-Us.html">About Us</a></li>
+<li><a id="SocialMedia_hyplnkCtrl" href="Social-Media.html">Social Media</a></li>
+<li><a id="Settings_hyplnkCtrl" href="Settings.html">Settings</a></li>
+</ul>
+</div>
+  <figure class="logo"><a href="index.html"><img src="src/logo_new.png" alt="logo"></a> </figure>
+</header>
+<!--Header End-->
+<div class="clear"></div>
+
+<div id="parentBox">
+<div id="slideboxleft"  class="">
+<!--Navigation Start-->
+<nav>
+<ul>
+<li class="nav-select"><a href="Casino1.html">Casino</a></li>
+<li><a href="Events.html">Events</a><span class="dvdr"></span></li>
+<li><a href="Nightlife.html">Nightlife</a><span class="dvdr"></span></li>
+<li><a href="Dining.html">Dining</a><span class="dvdr"></span></li>
+<li><a href="Hotel.html">Hotel</a></li>
+</ul>
+</nav>
+<div class="clear"></div>
+<!--Banner Start-->
+
+<section class="banner">
+<img alt="" width="761" height="494" src="src/casino-banner.jpg" />
+</section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+<section class="inner-content">
+  <h2>Games</h2>
+  <article class="content1 content-bg1" style="padding-bottom:0px;"> <span id="GameDetails_spanTextControl">
+    <div class="content-grid" id="table"><a href="javascript:">
+      <figure class="image-area"><img alt="" src="src/table-game.jpg" /></figure>
+      <div class="text-area">
+        <h3>Table Games</h3>
+        Blackjack, Baccarat, Craps... </div>
+    </a> <div class="clear"></div></div>
+    <div class="content-grid" id="roult"><a href="#">
+      <figure class="image-area"><img alt="" src="src/casino-NS2.jpg" /></figure>
+      <div class="text-area">
+        <h3>Roulette</h3>
+        High Tech Roulette games... </div>
+    </a> </div>
+    <div class="content-grid" id="progress"> <a href="#">
+      <figure class="image-area"><img alt="" src="src/casino-NS3.jpg" /></figure>
+      <div style="border-bottom: 0px none;" class="text-area">
+        <h3>Progressive Jackpots</h3>
+        Current progressive jackpots... </div>
+    </a><div class="clear"></div> </div>
+    </span>
+    <div class="clear"></div>
+  </article>
+  <h2> <span id="Winner_spanTextControl"> Winners </span> </h2>
+  <article class="content1 content-bg2" style="padding-bottom:0px;"> <span id="WinnerDetails_spanTextControl">
+    <div class="content-grid" id="recent"> <a href="#">
+      <figure class="image-area"><img alt="" src="src/casino-NS4.jpg" /></figure>
+      <div class="text-area">
+        <h3>Recent Winners</h3>
+        XGold Casino Celebrates... </div>
+    </a><div class="clear"></div> </div>
+    <div class="content-grid" id="feature"> <a href="#">
+      <figure class="image-area"><img alt="" src="src/casino-NS5.jpg" /></figure>
+      <div style="border-bottom: 0px none;" class="text-area">
+        <h3>Featured Players</h3>
+        Top Earning Players at XGold... </div>
+    </a><div class="clear"></div> </div>
+    </span>
+    <div class="clear"></div>
+    <div class="clear"></div>
+  </article>
+</section>
+
+</div>
+
+<div class="hidden" id="tablegame">
+   <div id="slidebox" class="slideright">
+        <!--Navigation Start-->
+        <nav>
+        <div class="arrow_back"><a href="javascript:" class="target" ><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+        <P>Casino</P>
+        </nav>
+        <!--Banner Start-->
+       
+           <section class="banner"><img alt="" src="src/tableGamesBanner2.jpg" /></section>
+        <div class="clear"></div>
+        <div class="banner-grd-inner1"></div>
+        <!--Banner End-->
+        <div class="clear"></div>
+        <!--Service Start-->
+        
+        <section class="rou_pan">
+        <h2 style="color: #d70000; padding: 20px 0px 0px 20px;">Table Games</h2>
+        <p class="tableGameInfo">
+        Test your luck at one of over 200 table games on our property.  We have Blackjack, Spanish 21, Caribbean Stud Poker, Baccarat, Craps, and Roulette in addition to our exciting 42-table Poker Room. Grab a seat to get in on the action!
+        </p>
+        </section>
+   </div>
+   </div>
+ <div class="hidden" id="roulette">
+ <div id="slidebox1" class="slideright">
+ <!--Navigation Start-->
+<nav>
+<div class="arrow_back"><a href="#" class="target"><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+<P>Casino</P>
+</nav>
+<!--Banner Start-->
+<section class="banner"><img alt="" src="src/rouletteBanner2.jpg" /></section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+
+<section class="rou_pan">
+
+
+<h2 style="color: #d70000; padding: 20px 0px 0px 20px;">Roulette</h2>
+<p class="rauittePara">
+Roulette is an exciting, fast paced game with a variety of bets and payoffs.  Be sure to check out our 14 live Roulette tables in the Sky Casino, or try your hand at virtual roulette at our cutting edge e-tables in the West wing.
+</p>
+</section>
+<div class="clear"></div>
+</div>
+ </div> 
+<div class="hidden" id="jackpot">
+  <div id="slidebox2" class="slideright">
+ <div class="clear"></div>
+<!--Navigation Start-->
+<nav>
+<div class="arrow_back"><a class="target" href="#"><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+<P>Casino</P>
+</nav>
+<!--Banner Start-->
+<section class="banner"><img alt="" src="src/jackpot2.jpg" /></section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+
+<section class="rou_pan">
+
+
+<h2 style="color: #d70000; padding: 20px 0px 0px 20px;">Progressive Jackpots</h2>
+<p class="rauittePara">
+Let the bells and whistles of our 2,500 slot machines excite your senses with fun games and chances to win big. With our cutting edge technology, we have interactive video games and mechanical slots to entertain every player, whether penny slots or $100 games are your pleasure.
+</p>
+</section>
+<div class="clear"></div>
+</div>
+</div>
+<div class="hidden" id="recentwinners">
+   <div id="slidebox3" class="slideright">
+<div class="clear"></div>
+<!--Navigation Start-->
+<nav>
+<div class="arrow_back"><a class="target" href="#"><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+<P>Casino</P>
+</nav>
+<!--Banner Start-->
+<section class="banner"><img alt="" src="src/recent_winner2.jpg" /></section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+
+<section class="rou_pan">
+
+
+<h2 style="color: #d70000; padding: 20px 0px 0px 20px;">Recent Winners</h2>
+<div class="winnerPara">
+<table cellspacing="0" cellpadding="0" border="0" align="center">
+    <tbody>
+        <tr>
+            <td>$82,000</td>
+            <td>Kathy Sampson</td>
+            <td>WA</td>
+            <td>Quick Hit</td>
+        </tr>
+        <tr>
+            <td>$67,500</td>
+            <td>Mike Juarez</td>
+            <td>NY</td>
+            <td>Top Dollar</td>
+        </tr>
+        <tr>
+            <td>$55,371</td>
+            <td>Howard Baker</td>
+            <td>CT</td>
+            <td>Deal or No Deal</td>
+        </tr>
+        <tr>
+            <td>$80,000</td>
+            <td>Petra Waters</td>
+            <td>NV</td>
+            <td>Double Diamond Strike</td>
+        </tr>
+        <tr>
+            <td>$42,000</td>
+            <td>Steve Horrowitz</td>
+            <td>CA</td>
+            <td>Top Dollar</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</section>
+<div class="clear"></div>
+</div>
+</div>
+<div class="hidden" id="feaplayers">
+  <div id="slidebox4" class="slideright">
+ <div class="clear"></div>
+<!--Navigation Start-->
+<nav>
+<div class="arrow_back"><a class="target" href="#"><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+<P>Casino</P>
+</nav>
+<!--Banner Start-->
+<section class="banner"><img alt="" src="src/featuredPlayersBanner2.jpg" /></section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+
+<section class="rou_pan">
+
+
+<h2 style="color: #d70000; padding: 20px 0px 0px 20px;">Featured Players</h2>
+<div class="winnerPara">
+<p>
+Amanda Simmons from Fort Lauderdale, Florida won big on Wednesday when she hit a jackpot for over 1.8 million on a Wide-Area Progressive penny slot.  This makes Amanda one of our highest winners to date at this casino location. She is elated with her big win and excellent luck at XGold Casino.
+</p>
+</div>
+</section>
+<div class="clear"></div>
+</div>
+</div>
+
+
+<div class="clear"></div>
+</div>
+
+
+
+   
+<!--Service End-->
+<div class="banner-grd2"></div>
+<div class="clear"></div>
+<footer> <a id="foothome" href="index.html"><img src="src/footer-home-icon.png" alt="" border="0" /></a> <a id="" href="Casino.html"><img src="src/footer-dice-icon-hover.png" alt="" border="0" /></a> <a id="footfood" href="Dining.html"><img src="src/footer-food-icon.png" alt="" border="0" /></a> <a id="footCalender" href="Events.html"><img src="src/footer-calendar-icon.png" alt="" border="0" /></a>  <a id="footerhotel" href="Hotel.html"><img src="src/hotel-icon.png" alt="" border="0" /></a> <a id="footeroffer" href="offer.html"><img src="src/offer-icon.png" alt="" border="0" /></a> </footer>
+</div>
+</div>
+</div>
+  
+<script src="src/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+</form></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

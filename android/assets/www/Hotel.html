@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Welcome</title>
+<link href="src/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="src/component.css" />
+<style>
+
+header {
+    background: #d70000 url("src/header-logo-bgX.jpg") repeat-y scroll center top !important;
+}
+
+.banner-grd-inner1{ display:none !important;}
+.wrapper{ padding-bottom:0px !important;}
+.banner-grd2{ display:none !important;}
+   
+#parentBox {
+    position: relative;
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+	transition:all 0.5s ease 0s;
+
+}
+
+.hidden {
+    height: auto;
+    right: -100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	z-index:100;
+	transition:all 0.3s ease 0s;
+}
+#slideboxleft{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:auto;
+	transition:all 0.3s ease 0s;
+}
+   
+</style>
+ <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+<script src="src/modernizr.custom.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+    var updateStatusBar = navigator.userAgent.match(/iphone|ipad|ipod/i) &&
+        parseInt(navigator.appVersion.match(/OS (\d)/)[1], 10) >= 7;
+
+    if (updateStatusBar) {
+        document.body.style.marginTop = '20px';
+    }
+
+   if (updateStatusBar) {
+        document.body.style.webkitTransform = 'translate3d(0, 20px, 0)';
+    }
+	
+	$(document).ready(function(){
+	$("#M-Slide1") .click(function(){
+	$(".slide-main").css('height','1200px');
+});
+		
+	});
+</script>
+
+<script> 
+$(document).ready(function(){
+	var parentHeight = $("#slideboxleft").outerHeight();
+	
+	$("#parentBox").css({"min-height" : parentHeight+"px"});
+	 
+	 $("#amenities_btn").click(function(){
+	 	$("#amenities").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#amenities").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+	 $("#room_btn").click(function(){
+	 	$("#room").css("right","0");
+		$("#slideboxleft").css("left","-100%");
+		var mainHeight = $("#amenities").outerHeight();
+		$("#parentBox").css({"min-height" : mainHeight+"px"});
+	 });
+
+	 
+	 
+	  $(".target").click(function(){
+		$("#slideboxleft").css("left","0");
+		$(".hidden").css("right","-100%");
+		$("#parentBox").css({"min-height" : parentHeight+"px"});
+	 });
+	
+	
+});
+</script>
+
+
+</head>
+
+<body> 
+<div class="phone">
+<div class="phoneScreen">
+<div class="wrapper">
+<header>
+<div class="notificition">
+<span class="not-arrow"><img src="icons/not-arrow.png" width="25" height="20" alt=""></span>
+<h6>Notifications</h6>
+<ul>
+<li><a href="offer.html">Free Play Cash!<br><span class="nspan">Exp. 1/15/2016</span><span class="r-rrow"><img src="src/r-arrow.png" width="8" height="17" alt=""></span></a></li>
+<li><a href="offer.html">Enter Sweepstakes<br><span class="nspan">Exp. 3/1/2016</span><span class="r-rrow"><img src="src/r-arrow.png" width="8" height="17" alt=""></span></a></li>
+
+</ul>
+</div>
+<span id="notificition" class="search icons"><img alt="" width="50" height="50" src="icons/notification.png" /></span>
+<div id="dl-menu" class="dl-menuwrapper">
+<span class="menu icons dl-trigger"><img src="src/nav-menu.png" width="50" height="50" alt=""></span>
+<ul class="dl-menu">
+<li><a id="AccountInfo_hyplnkCtrl" href="offer.html">Offers</a></li>
+<li><a id="Casino_hyplnkCtrl" href="Casino.html">Casino</a></li>
+<li><a id="Dining_hyplnkCtrl" href="Dining.html">Dining</a></li>
+<li><a id="Events_hyplnkCtrl" href="Events.html">Events</a></li>
+<li><a id="Nightlife_hyplnkCtrl" href="Nightlife.html">Nightlife</a></li>
+<li><a id="Nightlife_hyplnkCtrl" href="Hotel.html">Hotel</a></li>
+<li><a id="AboutUs_hyplnkCtrl" href="About-Us.html">About Us</a></li>
+<li><a id="SocialMedia_hyplnkCtrl" href="Social-Media.html">Social Media</a></li>
+<li><a id="Settings_hyplnkCtrl" href="Settings.html">Settings</a></li>
+</ul>
+</div>
+  <figure class="logo"><a href="index.html"><img src="src/logo_new.png" alt="logo"></a> </figure>
+</header>
+<!--Header End-->
+<div class="clear"></div>
+<div id="parentBox">
+<div id="slideboxleft"  class="">
+    <nav>
+    <ul>
+<li><a href="Casino.html">Casino</a><span class="dvdr"></span></li>
+<li><a href="Events.html">Events</a><span class="dvdr"></span></li>
+<li><a href="Nightlife.html">Nightlife</a><span class="dvdr"></span></li>
+<li><a href="Dining.html">Dining</a></li>
+<li class="nav-select"><a href="Hotel.html">Hotel</a></li>
+</ul>
+</nav>
+
+<section class="banner">
+<img alt="" width="761" height="494" src="src/hotel-banner.jpg" />
+</section>
+
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+
+<section class="inner-content">
+<h2>Reservations</h2>
+<article class="content1 content-bg1" style="padding-bottom:0px;">
+<span id="GameDetails_spanTextControl">
+<div class="content-grid"><a href="Hotel-book.html" target="_blank">
+<figure class="image-area"><img alt="" src="src/room.png" /></figure>
+<div class="text-area">
+<h3>Book your room now!</h3>
+Our best rates, Guaranteed!
+</div>
+</a>
+</div>
+</span>
+
+<div class="clear"></div>
+</article>
+<h2>
+  <span id="Winner_spanTextControl">
+    About Our Hotel 
+</span>
+
+</h2>
+<article class="content1 content-bg2" style="padding-bottom:0px;"><span id="WinnerDetails_spanTextControl">
+<div class="content-grid" id="amenities_btn"> <a href="#">
+  <figure class="image-area"><img alt="" src="src/hotel1.png" /></figure>
+  <div class="text-area">
+    <h3>Amenities</h3>
+    Enjoy world-class amenities </div>
+</a> </div>
+<div class="content-grid" id="room_btn"> <a href="#">
+  <figure class="image-area"><img alt="" src="src/hotel2.png" /></figure>
+  <div style="border-bottom: 0px none;" class="text-area">
+    <h3>Rooms</h3>
+    From classic to luxe suite... </div>
+</a> </div>
+</span>
+  <div class="clear"></div>
+</article>
+</section>
+<div class="clear"></div>
+
+    </div>
+    
+    <div class="hidden" id="amenities">
+    	<div id="slidebox" class="slideright">
+        	<div class="clear"></div>
+<!--Navigation Start-->
+<nav>
+  <div class="arrow_back"><a href="#" class="target"><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+  <P>Hotel</P>
+</nav>
+<!--Banner Start-->
+<section class="banner"><img alt="" src="src/hotel_amenitites2.jpg" /></section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+
+<div class="nightLifeDetails">
+<section class="roupan_grid">
+<article>
+<h2>Amenitites</h2>
+
+</article>
+<div class="clear"></div>
+</section>
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>In-room dining</strong></p>
+<p>Satisfy any craving with a delectable food and beverage menu curated by our chef, Hans Waldrin.</p>
+</article>
+<div class="clear"></div>
+</section>
+
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Concierge services</strong></p>
+<p>Experience downtown like a local with personalized itineraries created by our concierge. As an exclusive perk, our guests receive discounts at a number of restaurants and boutiques throughout the casino property.</p>
+</article>
+<div class="clear"></div>
+</section>
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Fitness room</strong></p>
+<p>The Fitness Room is located on the third floor and offers wellness equipment by Techno Gym.</p>
+</article>
+<div class="clear"></div>
+</section>
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Business services</strong></p>
+<p>All business needs including scanning, printing, faxing and copying are made available by our Guest Reception team. Additionally, our Suites are equipped with 27-inch iMacs and iPods are also available for all guests at no additional fee. Mounted iPads are available in the hotel lobby for info on the go.</p>
+</article>
+<div class="clear"></div>
+</section>
+
+</div>
+
+<div class="clear"></div>
+        </div>
+    </div>
+    
+    
+    <div class="hidden" id="room">
+    	<div id="slidebox" class="slideright">
+        <div class="clear"></div>
+<!--Navigation Start-->
+<nav>
+  <div class="arrow_back"><a href="#" class="target"><img src="src/left-arrow.png" alt="" border="0" /></a></div>
+  <P>Hotel</P>
+</nav>
+<!--Banner Start-->
+<section class="banner"><img alt="" src="src/hotel_room_types2.jpg" /></section>
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+
+<div class="nightLifeDetails">
+<section class="roupan_grid">
+<article>
+<h2>Room Types</h2>
+
+</article>
+<div class="clear"></div>
+</section>
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Superior queen</strong></p>
+<p>The Superior Queen Room features Queen pillow-top mattress, down comforter & pillows, a flat-screen television, and luxury amenities. </p>
+</article>
+<div class="clear"></div>
+</section>
+
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Superior king</strong></p>
+<p>Superior King Rooms feature a Custom King bed with leather headboard and hand-finished bronze detailing.</p>
+</article>
+<div class="clear"></div>
+</section>
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Deluxe king</strong></p>
+<p>The spacious, 240 square foot Deluxe King Room features impressive views and a pillow top Custom King mattress.</p>
+</article>
+<div class="clear"></div>
+</section>
+
+<section class="roupan_grid">
+<article class="event_arti">
+<p><strong>Grand Suite</strong></p>
+<p>This exquisite 16th floor Grand Suite, spanning 700-800 square feet, features a master bedroom with a California King bed</p>
+</article>
+<div class="clear"></div>
+</section>
+
+</div>
+
+<div class="clear"></div>
+        </div>
+    </div>
+    
+    
+
+</div>
+
+
+<div class="clear"></div>
+
+<!--Service End-->
+<div class="banner-grd2"></div>
+<div class="clear"></div>
+<footer> <a id="foothome" href="index.html"><img src="src/footer-home-icon.png" alt="" border="0" /></a> <a id="FootCasino" href="Casino.html"><img src="src/footer-dice-icon.png" alt="" border="0" /></a> <a id="footfood" href="Dining.html"><img src="src/footer-food-icon.png" alt="" border="0" /></a> <a id="footCalender" href="Events.html"><img src="src/footer-calendar-icon.png" alt="" border="0" /></a>  <a id="" href="Hotel.html"><img src="src/hotel-icon-hover.png" alt="" border="0" /></a> <a id="footeroffer" href="offer.html"><img src="src/offer-icon.png" alt="" border="0" /></a> </footer>
+</div>
+</div>
+</div>
+
+<script src="src/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+</form></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

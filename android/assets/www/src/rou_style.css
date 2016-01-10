@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'Conv_helvetica-normal';
+	src: url('https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/helvetica-normal.eot');
+	src: local('☺'), url('https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/helvetica-normal.woff') format('woff'), url('https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/helvetica-normal.ttf') format('truetype'), url('https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/helvetica-normal.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+.wrapper{width:100%;}
+.clear{clear:both;}
+.fleft{float:left;}
+.fright{float:right;}
+li{list-style:none;}
+
+header{background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/header-logo-bg.jpg) top center repeat-y #d70000; width:96%; padding:22px 2%; float:left;}
+header .icons{width:50px; height:auto;}
+header .icons img{width:100%; height:auto;}
+header .search{float:left;}
+header .menu{float:right;}
+
+.banner{float:left; position:relative; width:100%;}
+.banner img{width:100%; height:auto; display:block;}
+.banner .banner-text{
+	position:absolute; 
+	left:0px; bottom:40px; 
+	width:80%;
+	color:#fff; 
+	padding:20px 10%;
+	background-color:rgba(0, 0, 0, 0.6);
+	font-family:'Conv_helvetica-normal',Sans-Serif; 
+	 }
+.banner .banner-text .text-left{font-size:40px; width:60%; font-weight:lighter;}
+.banner .banner-text .text-left span{display:block; margin-left:40px; font-weight:bold; font-size:60px;}
+
+.banner .banner-text .text-right{font-size:24px; width:40%; font-weight:lighter; text-align:right; margin-top:15px;}
+
+.banner-grd{
+	height: 70px; float:left;
+	background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/grd-bg1.png) 0 0 repeat-y;
+	width:100%;
+	}
+.banner-grd-inner1{
+	height: 8px; float:left;
+	background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/grd-bg1.png) 0 0 repeat-y;
+	width:100%;
+	}
+.banner-grd2{
+	height: 70px; float:left;
+	background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/grd-bg2.png) 0 0 repeat-y;
+	width:100%;
+	}
+
+.service-area{float:left; width:100%;}
+.service-area li{float:left; width:50%; list-style:none;}
+.service-area li h2{background:#000; padding:7px 0; font-family:'Conv_helvetica-normal',Sans-Serif; font-size:30px; font-weight:bold; color:#fff;}
+.service-area li h2 span{padding-left:30px;}
+.service-area li img{width:100%; height:85px; display:block;}
+.r-border{border-right:3px solid #000; box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;}
+	
+nav{height:79px; background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/images/nav-bg.png) 0 0  repeat-x; width:92%; float:left; padding:0 4%; position:relative;}
+nav li{float:left; width:19%; padding:24px 3%; font-family:'Conv_helvetica-normal',Sans-Serif; font-size:30px; position:relative; text-align:center;}
+nav li .dvdr{height:24px; width:2px; background:#fff; position:absolute; top:30px; right:0px;}
+nav li a{color:#fff; text-decoration:none; font-weight:normal;}
+.nav-select{background:#f5f5f5;}
+.nav-select a{color:#333;}
+
+/*-------susanta---------------*/
+nav p{font-family:'Conv_helvetica-bold',Sans-Serif;font-size:30px; position:relative; text-align:center; line-height:78px; color:#fff; font-weight:bold; }
+.arrow_back { left: 4%; position: absolute; top: 36%;}
+.rou_pan{ background:#fff; width:100%;}
+.roupan_grid{ clear:both;}
+.rou_image{ width:30%; float:left;}
+.rou_image img{ width:100%;}
+.roupan_grid article{ width:60%; float:left; padding:10px 0 0 15px;}
+.roupan_grid article h2{ color:#d70000;font-family:'Conv_helvetica-normal',Sans-Serif; font-size:30px; line-height:35px; padding:5px 0 8px; }
+
+.red_grid{ background:#5c0338; width:100%; padding:35px 0; text-align:center; margin-bottom:87px;}
+.red_grid a{ display:block; width:80%; margin:0 auto; background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/red_button.png) center left repeat-x; border-radius:5px; font-family:'Conv_helvetica-normal',Sans-Serif; font-size:51px; line-height:55px; color:#fff; padding:23px 0; text-decoration:none;}
+.red_grid a:hover{ box-shadow:1px 2px 15px #000;}
+
+/*-------susanta---------------*/
+
+.inner-content{float:left; width:100%;}
+.inner-content h2{background:#000; padding:7px 30px; font-family:'Conv_helvetica-normal',Sans-Serif; font-size:30px; font-weight:bold; color:#fff;}
+
+.inner-content .content-bg1{background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/grd-bg1.png) 0 0 repeat-y;}
+.inner-content .content-bg2{background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/grd-bg2.png) 0 0 repeat-y;}
+
+.inner-content .content1{width:90%; padding:15px 5%;}
+.inner-content .content1 .content-grid{float:left; margin-bottom:15px; width:100%;}
+.inner-content .content1 .content-grid .image-area{width:109px; height:87px; float:left; padding-right:30px;}
+.inner-content .content1 .content-grid .text-area{width:60%; float:left; border-bottom:2px solid #000; color:#fff; padding:5px 0 20px 0; font-size:24px;}
+
+.inner-content .content1 .content-grid .text-area h3{font-size:30px;}
+
+footer{width:100%; background:#000; float:left; text-align:center; position:fixed; bottom:0px;}
+footer img{padding:20px 30px;}
+footer img{width:7%; height:auto; padding:5px 4%;}
+@media only screen and (min-width: 761px) {
+	
+
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+		.banner .banner-text{width:90%; padding:20px 5%;}	
+			.red_grid a { color: #fff; font-size: 24px; line-height: 33px; padding: 23px 0; margin-bottom:45px;}
+}
+
+@media only screen and (max-width: 600px) {
+	nav li	{font-size:20px; padding:28px 3%;}
+	/*---Susanta--------*/
+	.red_grid a{ font-size:39px; line-height:45px; color:#fff; padding:23px 0;}
+	/*---Susanta--------*/
+}
+
+@media only screen and (max-width: 500px) {
+	.banner .banner-text .text-left{font-size:20px;}
+	.banner .banner-text .text-left span{margin-left:0px; font-size:40px;}
+	.banner .banner-text .text-right{font-size:20px; margin-top:5px;}
+	.service-area li{width:100%; 
+	-webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;}
+	.r-border{border-right:0px;}
+	.service-area li img{height:auto;}
+	
+	/*---susanta-------*/
+	.arrow_back {top: 26%;}
+	.rou_image{ width:27%; float:left;}
+.rou_image img{ width:100%;}
+.roupan_grid article{ width:65%; float:left; padding:10px 0 0 10px; margin:0 auto 15px; font-size:11px;}
+.roupan_grid article h2{ color:#d70000;font-family:'Conv_helvetica-normal',Sans-Serif; font-size:14px; line-height:35px; padding:5px 0 8px; }
+.red_grid a{ font-size:30px; line-height:34px; color:#fff; padding:23px 0;}
+	/*---susanta-------*/	
+}
+
+@media only screen and (max-width: 420px) {
+	nav{height:auto; background:url(https://landingpage.experiture.com/TrackingSystem/AG_44625/AD_44626/Images/caldercasino/nav-bg.png) 0 0  repeat-x; }
+	nav p { line-height:40px; font-size:23px;}
+	nav li{width:94%; padding:10px 3%;}
+	nav li .dvdr{display:none;}
+	.inner-content .content1 .content-grid{text-align:center;}
+	.inner-content .content1 .content-grid .image-area{width:90%; padding:0 5%;}
+	.inner-content .content1 .content-grid .text-area{width:90%; padding:0 5% 10px 5%;}
+	.red_grid a { color: #fff; font-size: 24px; line-height: 33px; padding: 23px 0;}
+	.roupan_grid article h2 { line-height: 11px;}
+}
+
+@media only screen and (max-width: 360px) {
+	header .icons{width:35px; height:auto;}
+	header{padding:30px 4%; width:92%;}
+	.banner .banner-text .text-left{width:100%;}
+	.banner .banner-text .text-left span{display:inline; font-size:30px; text-align:center;}
+	.banner .banner-text .text-right{width:100%; text-align:center;}
+	.banner .banner-text{bottom:5px;}
+	.red_grid a { color: #fff; font-size: 24px; line-height: 33px; padding: 23px 0; margin-bottom:110px;}
+}
+
+

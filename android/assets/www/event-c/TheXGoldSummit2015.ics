@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 15.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:India Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20151105T125848Z
+DESCRIPTION:The Summit 2015 is a chance for all of our associates\, stakeho
+	lders\, partners\, and friends to learn about what new and exciting things
+	 are coming up for XGOLD Casino and to review the past year in depth. We a
+	re excited to present president Seth Freeman\, who will present the keynot
+	e at 2pm\, concluding the conference. Request an invite by emailing summit
+	@xgoldcasino.com.\n\n--\nhttp://addtocalendar.com
+DTEND;TZID="India Standard Time":20151105T100000
+DTSTAMP:20151105T121100Z
+DTSTART;TZID="India Standard Time":20151105T100000
+LAST-MODIFIED:20151105T125848Z
+LOCATION:New York
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-in:The XGold Summit 2015
+TRANSP:OPAQUE
+UID:563b4741b9bd5
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-in"><FONT FACE="Cali
+	bri">The Summit 2015 is a chance for all of our associates\, stakeholders\
+	, partners\, and friends to learn about what new and exciting things are c
+	oming up for XGOLD Casino and to review the past year in depth. We are exc
+	ited to present president Seth Freeman\, who will present the keynote at 2
+	pm\, concluding the conference. Request an invite by emailing</FONT></SPAN
+	><SPAN LANG="en-in"> </SPAN><A HREF="mailto:summit@xgoldcasino.com"><SPAN 
+	LANG="en-in"></SPAN><SPAN LANG="en-in"></SPAN><SPAN LANG="en-in"><U><FONT 
+	COLOR="#0563C1" SIZE=2 FACE="Arial">summit@xgoldcasino.com</FONT></U></SPA
+	N><SPAN LANG="en-in"></SPAN></A><SPAN LANG="en-in"><FONT FACE="Calibri">.<
+	/FONT></SPAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+END:VEVENT
+END:VCALENDAR

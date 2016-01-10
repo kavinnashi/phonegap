@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Welcome</title>
+<link href="src/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="src/component.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="src/modernizr.custom.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+    var updateStatusBar = navigator.userAgent.match(/iphone|ipad|ipod/i) &&
+        parseInt(navigator.appVersion.match(/OS (\d)/)[1], 10) >= 7;
+
+    if (updateStatusBar) {
+        document.body.style.marginTop = '20px';
+    }
+
+   if (updateStatusBar) {
+        document.body.style.webkitTransform = 'translate3d(0, 20px, 0)';
+    }
+</script>
+
+<style>
+
+header {
+    background: #d70000 url("src/header-logo-bgX.jpg") repeat-y scroll center top !important;
+}
+
+.banner-grd-inner1{ display:none !important;}
+.wrapper{ padding-bottom:0px !important;}
+.banner-grd2{ display:none !important;}
+   
+</style>
+</head>
+
+<body> 
+<div class="phone">
+<div class="phoneScreen">
+<div class="wrapper"><!--Header End-->
+<div class="clear"></div>
+<!--Navigation Start--><!--Banner Start-->
+<div class="clear"></div>
+<div class="banner-grd-inner1"></div>
+<!--Banner End-->
+<div class="clear"></div>
+<!--Service Start-->
+<iframe src="xgold-book/index.html" allowtransparency="yes" frameborder="0"  style="width:100%; height:1000px;"></iframe>
+<div class="clear"></div>
+<!--Service End-->
+<div class="banner-grd2"></div>
+<div class="clear"></div>
+<footer> <a id="foothome" href="index.html"><img src="src/footer-home-icon.png" alt="" border="0" /></a> <a id="FootCasino" href="Casino.html"><img src="src/footer-dice-icon.png" alt="" border="0" /></a> <a id="footfood" href="Dining.html"><img src="src/footer-food-icon.png" alt="" border="0" /></a> <a id="footCalender" href="Events.html"><img src="src/footer-calendar-icon.png" alt="" border="0" /></a>  <a id="" href="Hotel.html"><img src="src/hotel-icon-hover.png" alt="" border="0" /></a> <a id="footeroffer" href="offer.html"><img src="src/offer-icon.png" alt="" border="0" /></a> </footer>
+</div>
+</div>
+</div>
+
+<script src="src/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
+</form></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
