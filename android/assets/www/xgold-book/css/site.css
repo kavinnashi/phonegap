@@ -1,0 +1,487 @@
+@import url(//fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(/fonts/fontawesome/css/font-awesome.css);
+/* Sans Light ***** */
+@font-face {
+  font-family: "SansLight";
+  src: url(../fonts/TheSans/TheSans_TT3_.eot); }
+@font-face {
+  font-family: "SansLight";
+  src: url(../fonts/TheSans/TheSans_TT3_.svg) format("svg"); }
+@font-face {
+  font-family: "SansLight";
+  src: url(../fonts/TheSans/TheSans_TT3_.woff) format("woff"); }
+/* Sans Plain ***** */
+@font-face {
+  font-family: "SansPlain";
+  src: url(../fonts/TheSans/TheSans_TT5_.eot); }
+@font-face {
+  font-family: "SansPlain";
+  src: url(../fonts/TheSans/TheSans_TT5_.svg) format("svg"); }
+@font-face {
+  font-family: "SansPlain";
+  src: url(../fonts/TheSans/TheSans_TT5_.woff) format("woff"); }
+/* Sans Plain Caps ***** */
+@font-face {
+  font-family: "SansPlainCaps";
+  src: url(../fonts/TheSans/TheSans_TT5_Caps.eot); }
+@font-face {
+  font-family: "SansPlainCaps";
+  src: url(../fonts/TheSans/TheSans_TT5_Caps.svg) format("svg"); }
+@font-face {
+  font-family: "SansPlainCaps";
+  src: url(../fonts/TheSans/TheSans_TT5_Caps.woff) format("woff"); }
+body {
+  font-size: 14px;
+  padding-top: 35px; }
+
+.bkground {
+  background: #878787;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #878787 0%, #5a6372 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #878787), color-stop(100%, #181818));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #878787 0%, #181818 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #878787 0%, #181818 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #878787 0%, #181818 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #878787 0%, #181818 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$lt-page-background', endColorstr='$dk-page-background',GradientType=0 );
+  /* IE6-9 */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -50;
+  background-repeat: repeat; }
+
+.img-bkground {
+  background: url(../images/Chick/bg-bodytv.jpg) repeat;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  z-index: -50; }
+
+.hhr1 {
+  display: block;
+  background: #474747;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 5px; }
+
+.hhr2 {
+  display: inline-block;
+  background: #8c8c8c;
+  height: 20px;
+  /* width: 14px; */
+  margin: 2px 2px 2px 3px;
+  padding: 2px 4px 2px 2px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  font-family: SansPlain Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff; }
+
+.hhr3 {
+  display: block;
+  background: #474747;
+  padding: 5px 10px 3px 10px;
+  height: 30px;
+  /* border-left: 2px solid #fff; */ }
+
+h4 {
+  background: transparent;
+  display: inline-block;
+  height: 20px;
+  font-size: 14pt;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-shadow: none;
+  color: #f2f2f2; }
+
+h5 {
+  background: transparent;
+  display: inline-block;
+  height: 16px;
+  font-size: 10pt;
+  font-weight: normal;
+  text-shadow: none;
+  color: #fff; }
+
+.capt12 .rate12 {
+  background-color: #fff;
+  color: #000; }
+  .capt12 .rate12 label {
+    color: #0e0e0e; }
+  .capt12 .rate12 input, .capt12 .rate12 select {
+    background-color: #CCCCCC;
+    color: #000000; }
+
+label {
+  display: inline;
+  font-weight: normal; }
+
+.col-md-8 .rate21 {
+  /* adds a gutter to the right side panel */
+  margin: 0px 0px 0px 0px;
+  background-color: #a5b5bf; }
+
+.col-md-4.pull-right .rate2 {
+  /* adds a gutter to the right side panel */
+  margin: 0px 0px 0px 4px; }
+
+.col-md-4.pull-left .rate2 {
+  /* adds a gutter to the right side panel */
+  margin: 0px 4px 0px 0px; }
+
+.col-md-8.pull-right .rate21 {
+  /* adds a gutter to the left side panel */
+  margin: 0px 0px 0px 0px; }
+
+.capt12 label {
+  color: #000000; }
+
+.col-md-4 .panel.capt12 {
+  background-color: #878787; }
+
+.col-md-8 .panel.capt12 {
+  background-color: #878787;
+  margin-left: 8px; }
+
+.capt12a {
+  padding-left: 5px; }
+
+.cover {
+  background-color: #878787; }
+
+.nav-pills {
+  display: inline-block; }
+  .nav-pills > .active {
+    background-color: #999999; }
+
+.hr-pills {
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  border-color: #000000;
+  padding: 2px 10px 2px 10px;
+  margin: 1px;
+  display: inline-block; }
+  .hr-pills > .active {
+    background-color: #999999; }
+
+.rwdcrumb {
+  height: 38px;
+  background-color: #343434; }
+
+#topnav ul li a {
+  -moz-transition: .25s;
+  -ms-transition: .25s;
+  -o-transition: .25s;
+  -webkit-transition: .25s;
+  font-family: "sansplain", sans-serif;
+  font-size: 13px;
+  padding: 9px 10px 8px 10px;
+  text-decoration: none;
+  transition: .25s; }
+  #topnav ul li a i {
+    font-size: 14px;
+    font-weight: normal;
+    color: #8c8c8c; }
+
+#topnav ul li a:hover {
+  border-color: #8c8c8c;
+  background-color: #8c8c8c;
+  height: 37px;
+  color: #ffffff; }
+  #topnav ul li a:hover i {
+    color: #ffffff; }
+
+input, select {
+  border-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border-radius: $border-radius-base;
+  background-color: $well-bg;
+  @include gradient-vertical($start-color: darken($brand-lightest, 5%), $end-color: $well-bg);
+  box-shadow: 1px 1px 4px 1px $brand-primary inset; */ }
+
+#logo {
+  position: relative;
+  z-index: 600; }
+
+.logo {
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  z-index: 600; }
+
+#logo.logoMark {
+  background-size: 118px 140px;
+  display: block;
+  float: left;
+  height: 118px;
+  width: 140px; }
+
+.logoProperty {
+  color: #adadad;
+  display: block;
+  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: auto;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5); }
+
+.logoMark {
+  background-size: 118px 140px;
+  display: block;
+  float: left; }
+
+.logo_bg {
+  background-color: #0e0e0e; }
+
+.logoholder {
+  background-color: #0e0e0e;
+  background: url(../images/wsh/header_bg.jpg) no-repeat center;
+  background-size: contain;
+  color: #f0f0f0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* z-index: 600; */ }
+
+.wing {
+  background-color: #8E8BC1;
+  padding: 4px 5px 4px 5px;
+  /* border: 0px solid #4c4b7f; */ }
+
+.wing .wingheader {
+  font-family: "sansplaincaps", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5); }
+
+.wing-table {
+  margin-bottom: 2px; }
+
+.panel-rooms {
+  background: url(images/CTG.svg);
+  background-color: #878787;
+  color: #000000; }
+
+.panel {
+  margin-bottom: 0px;
+  border-radius: 0px; }
+
+#crumb ul {
+  margin: 0px 0px 0px 0px;
+  font-size: 11px;
+  padding-left: 2px;
+  float: right; }
+
+#crumb ul li {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin: 3px 3px 0 0;
+  text-align: center;
+  position: relative; }
+
+#crumb ul li a {
+  display: block;
+  background-color: #640309;
+  color: #ffffff;
+  padding: 0px 4px 0px 4px; }
+
+#crumb ul li.active a {
+  background-color: #c7c7c7;
+  color: #640309;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0e0e0e;
+  z-index: 100; }
+
+#crumb ul li a:hover {
+  text-decoration: none;
+  cursor: not-allowed; }
+
+.sm-box {
+  float: left;
+  width: 30px;
+  height: 20px;
+  margin: 5px 5px 3px 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3C3C69;
+  box-shadow: 3px 3px 5px 0px #212152; }
+
+.cal-avail {
+  background-color: #D8D8D8; }
+
+.cal-sold {
+  background-color: #d1d6e9; }
+
+.cal-boxed {
+  background-color: #976aff; }
+
+.cal-stay {
+  background-color: #75daa2; }
+
+.cal-pkg {
+  background-color: #da9dcc; }
+
+.cal-min {
+  background-color: #da82a4; }
+
+.cal-select {
+  background-color: #343434;
+  border-color: #f5f5f5; }
+
+.cal-spec {
+  background-color: #BD0109; }
+
+/* added in departure date style from Caltemp in lansa */
+.departureDate {
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#7c77b1), color-stop(50%,#dbdaec));*/
+  /* change 50% on #7c77b1 to less than 50% for gradient */
+  background: #f1f1f1;
+  background: -moz-linear-gradient(-45deg, #f1f1f1 50%, #eaeaea 50%);
+  background: -webkit-gradient(left top, right bottom, color-stop(50%, #f1f1f1), color-stop(50%, #eaeaea));
+  background: -webkit-linear-gradient(-45deg, #f1f1f1 50%, #eaeaea 50%);
+  background: -o-linear-gradient(-45deg, #f1f1f1 50%, #eaeaea 50%);
+  background: -ms-linear-gradient(-45deg, #f1f1f1 50%, #eaeaea 50%);
+  background: linear-gradient(135deg, #f1f1f1 50%, #eaeaea 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$cal-select', endColorstr='#dbdaec', GradientType=1 );
+  font-size: 10px;
+  text-align: left !important;
+  vertical-align: text-top !important;
+  color: #a09fb1; }
+
+.departureDate a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #a09fb1;
+  /*#12757b; */ }
+
+.departureDate .rate {
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  font-weight: bold; }
+
+.departureDate .slsh {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  font-weight: normal; }
+
+.btn-fresh {
+  color: #ffffff;
+  font-style: normal;
+  background-color: #0e0e0e;
+  white-space: nowrap;
+  padding: 3px 6px;
+  border-radius: 0px;
+  box-shadow: 3px 3px 5px 0px #0f000f; }
+
+a.btn-refresh {
+  color: #ffffff; }
+
+a.btn-gold {
+  color: #db9915;
+  font-style: normal;
+  border: 2px solid #DB9915;
+  white-space: nowrap;
+  padding: 3px 6px;
+  width: 140px;
+  border-radius: 0px; }
+  a.btn-gold :hover {
+    color: #ff0000; }
+
+a.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  text-align: center; }
+
+.btn-default {
+  -webkit-box-shadow: 3, 0;
+  box-shadow: 3, 0; }
+
+.btn-lg {
+  border-width: 0px; }
+
+.text-dark {
+  color: #222222; }
+
+.text-light {
+  color: #f2f2f2; }
+
+.rate-table1 {
+  background-color: #670018;
+  padding: 5px 5px 5px 5px; }
+
+.rate-table2 {
+  background-color: #f2f2f2;
+  padding: 5px 5px 5px 5px; }
+
+.rate-table3 {
+  background-color: #878787;
+  padding: 5px 5px 5px 5px; }
+
+.well-terms {
+  max-width: 100%;
+  margin: 15px;
+  color: #0e0e0e;
+  background: url(../images/palms/lightdiag.png) repeat; }
+
+.well-avs {
+  background-color: #343434;
+  background-image: -webkit-linear-gradient(top, #878787 0%, #878787 100%);
+  background-image: -o-linear-gradient(top, #878787 0%, #878787 100%);
+  background-image: linear-gradient(to bottom, #878787 0%, #878787 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1C1C2F', endColorstr='#FF26253F', GradientType=0);
+  border-color: #7f7db3; }
+
+.text-lg {
+  font-size: large; }
+
+.modal-content, .modal-header {
+  background-color: #640309; }
+
+.footer {
+  background-color: #878787;
+  color: #474747; }
+
+.social {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .social a {
+    color: #BD0109;
+    font-size: large; }
+
+.form-group {
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  padding-top: 6px; }
+
+.panel .accordion {
+  background-color: #878787; }
+
+.header-content {
+  color: #34353a; }
+
+.well.header.transparent {
+  opacity: 0.80; }
+
+/*# sourceMappingURL=site.css.map */

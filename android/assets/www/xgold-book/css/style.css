@@ -1,0 +1,274 @@
+/* RWD_CSS_LOADER for responsive web design */
+/* the below listed componenets are loded at run time for the Responsive ResNet offer design */
+/* please create unique new componenets when customizing styles for your property */
+/* bootstrap.css should not be hand edited. */
+/* site.css is open to editing by properties if desired. */
+
+/*@import url("css/main.css");
+@import url("css/site.css");*/
+
+
+
+/* lansa CALTEMP added */
+
+#PWK_NUM {
+ font-size:12px;
+}
+.date {
+  font-size: 10px;
+  text-align: left !important;
+  vertical-align: text-top !important;
+  color: #a09fb1;
+}
+
+.date A:LINK {
+  font-size: 10px;
+  text-decoration: none;
+  color: #a09fb1;  /*#12757b; */
+}
+
+.date A:VISITED {
+  font-size: 10px;
+  text-decoration: none;
+  color: #a09fb1;
+}
+
+.rate {
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+
+.slsh {
+  font-size: 12px;
+  /* text-align: center; */
+  display: block;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.date .slsh {
+
+  text-align: center;
+}
+
+.rateCalendar {
+
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  background-color: #d2d1e3;   /*dab756*/
+  border: 0px solid #a09fb1;
+  border-collapse: collapse;
+  border-spacing: 0;
+  /*text-align: center;*/
+
+  /*
+      -moz-border-radius-bottomleft:12px;
+      -webkit-border-bottom-left-radius:12px;
+      border-bottom-left-radius:12px;
+
+      -moz-border-radius-bottomright:12px;
+      -webkit-border-bottom-right-radius:12px;
+      border-bottom-right-radius:12px;
+
+      -moz-border-radius-topright:12px;
+      -webkit-border-top-right-radius:12px;
+      border-top-right-radius:12px;
+
+      -moz-border-radius-topleft:12px;
+      -webkit-border-top-left-radius:12px;
+      border-top-left-radius:12px;
+  */
+}
+
+.rateCalendar tr:first-child td:last-child {
+  /*
+      -moz-border-radius-topright:12px;
+      -webkit-border-top-right-radius:12px;
+      border-top-right-radius:12px;
+  */
+}
+
+.rateCalendar tr:last-child td:last-child {
+  /*
+      -moz-border-radius-bottomright:12px;
+      -webkit-border-bottom-right-radius:12px;
+      border-bottom-right-radius:12px;
+  */
+}
+
+.rateCalendar tr:first-child td:first-child {
+  /*
+      -moz-border-radius-topleft:12px;
+      -webkit-border-top-left-radius:12px;
+      border-top-left-radius:12px;
+  */
+}
+
+
+.rateCalendar tr:last-child td:first-child{
+  /*
+      -moz-border-radius-bottomleft:12px;
+      -webkit-border-bottom-left-radius:12px;
+      border-bottom-left-radius:12px;
+  */
+}
+
+.rateCalendar tr:nth-child(2) td{
+  background-color: #878787;  /*8e8bc1*/
+  color: #ffffff;
+  font-size: 13px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+.rateCalendar tr td:hover{
+  /*
+      background-color:#d2232a;
+  */
+}
+
+
+.rateCalendar td{
+  vertical-align: middle;
+  /*background-color:#dab756;*/
+  border:1px solid #a09fb1;
+  border-width: 0px 1px 1px 0px;
+  text-align: center;
+  padding: 0px 4px 16px 2px;
+  height: 30px;
+  width: 14%;
+  /*font-size: 14px;*/
+  font-family: Trebuchet MS, Arial, Helvetica;
+  /*font-weight: bold;*/
+  color: #000000;
+}
+.rateCalendar tr:last-child td{
+  border-width:0px 1px 0px 0px;
+}
+.rateCalendar tr td:last-child{
+  border-width:0px 0px 1px 0px;
+}
+.rateCalendar tr:last-child td:last-child{
+  border-width:0px 0px 0px 0px;
+}
+.rateCalendar tr:first-child td{
+  /*
+  background:-o-linear-gradient(bottom, #4c4b7f 5%, #8e8bc1 100%); background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4c4b7f), color-stop(1, #8e8bc1));
+  background:-moz-linear-gradient( center top, #4c4b7f 5%, #8e8bc1 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4b7f", endColorstr="#8e8bc1");background: -o-linear-gradient(top,#4c4b7f,8e8bc1);
+  */
+  background-color: #750f10; /*4c4b7f*/
+  border: 0px solid #000000;
+  text-align: center;
+  border-width: 0px 0px 0px 0px;
+  padding: 7px;
+  font-size: 16px;
+  font-family: Trebuchet MS, Arial, Helvetica;
+  font-weight: bold;
+  color: #ffffff;
+  /*text-shadow: 3px 2px 3px #555555;*/
+}
+
+.rateCalendar tr:first-child:hover td{
+  /*
+      background:-o-linear-gradient(bottom, #4c4b7f 5%, #8e8bc1 100%); background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4c4b7f), color-stop(1, #8e8bc1) );
+      background:-moz-linear-gradient( center top, #4c4b7f 5%, #8e8bc1 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4b7f", endColorstr="#8e8bc1"); background: -o-linear-gradient(top,#4c4b7f,8e8bc1);
+      background-color:#4c4b7f;
+  */
+}
+.rateCalendar tr:first-child td:first-child{
+  /*border-width:0px 0px 0px 0px;*/
+}
+.rateCalendar tr:first-child td:last-child{
+  /*border-width:0px 0px 0px 0px;*/
+}
+
+.calsection .carousel-control {
+  /* HHR overrides */
+  width: 18%;
+  height: 36px;
+  font-size: 28px;
+}
+
+.carousel-indicators {
+  display: none;
+
+}
+
+.table-responsive {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  // border: 1px solid #dddddd;
+  -webkit-overflow-scrolling: touch; }
+.table-responsive > .table {
+  margin-bottom: 0; }
+.table-responsive > .table > thead > tr > th,
+.table-responsive > .table > thead > tr > td,
+.table-responsive > .table > tbody > tr > th,
+.table-responsive > .table > tbody > tr > td,
+.table-responsive > .table > tfoot > tr > th,
+.table-responsive > .table > tfoot > tr > td {
+  white-space: nowrap; }
+.table-responsive > .table-bordered {
+  border: 0; }
+.table-responsive > .table-bordered > thead > tr > th:first-child,
+.table-responsive > .table-bordered > thead > tr > td:first-child,
+.table-responsive > .table-bordered > tbody > tr > th:first-child,
+.table-responsive > .table-bordered > tbody > tr > td:first-child,
+.table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0; }
+.table-responsive > .table-bordered > thead > tr > th:last-child,
+.table-responsive > .table-bordered > thead > tr > td:last-child,
+.table-responsive > .table-bordered > tbody > tr > th:last-child,
+.table-responsive > .table-bordered > tbody > tr > td:last-child,
+.table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0; }
+.table-responsive > .table-bordered > tbody > tr:last-child > th,
+.table-responsive > .table-bordered > tbody > tr:last-child > td,
+.table-responsive > .table-bordered > tfoot > tr:last-child > th,
+.table-responsive > .table-bordered > tfoot > tr:last-child > td {
+  border-bottom: 0; }
+
+@media (max-width: 600px) {
+  .rateCalendar td{
+    padding:3px;
+    height: 30px;
+    font-size:10px;
+    font-weight:normal;
+    width: 12%;
+  }
+
+  .rate {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .slsh {
+    font-size: 9px;
+    font-weight: normal;
+    text-decoration: line-through;
+  }
+
+  .departureDate .rate  {
+    font-size: 10px;
+    display: block;
+    font-weight: normal;
+  }
+
+  .departureDate .slsh  {
+    font-size: 9px;
+    display: block;
+    font-weight: normal;
+  }
+
+}
