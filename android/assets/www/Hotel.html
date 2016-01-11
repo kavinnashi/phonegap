@@ -72,7 +72,7 @@ header {
 </script>
 
 <script> 
-$(document).ready(function(){
+document.addEventListener("deviceready",function(){
 	var parentHeight = $("#slideboxleft").outerHeight();
 	
 	$("#parentBox").css({"min-height" : parentHeight+"px"});
