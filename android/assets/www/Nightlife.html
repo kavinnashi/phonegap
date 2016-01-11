@@ -326,7 +326,27 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-
+<script src="cordova.js"></script>
+		<script src="cordova_plugins.js"></script>
+        <script src="src/jquery.dlmenu.js"></script>
+        <script  src="js/app.js"></script> 
+                
+       
+		<script>
+			document.addEventListener("deviceready", function() {
+				
+				$( '#dl-menu' ).dlmenu();
+				
+				window.localStorage.setItem("XgoldUserAPIKey","27CCC3A558E542DD827649EED27F64C3");
+				if(window.localStorage.getItem("XgoldIs_login")!= undefined  && window.localStorage.getItem("XgoldIs_login") != "")
+				{
+					  window.localStorage.setItem("XgoldIs_login","");
+				}
+				featchPushId();
+			});
+			
+			
+		</script>
 <script src="src/jquery.dlmenu.js"></script>
 		<script>
 			$(function() {
